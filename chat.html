@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chatbot Tienda - Flores Eternas</title>
+
+  <!-- Ajusta la ruta si usas otra estructura (ej: /static/css/estilo1.css) -->
+  <link rel="stylesheet" href="../estilos/estilo1.css">
+</head>
+<body>
+
+  <main class="panel" role="main" aria-label="Chatbot tienda de regalos">
+    <div class="header">
+      <div class="logo">FE</div>
+      <div>
+        <h1>Chatbot - Flores Eternas</h1>
+        <p class="sub">Flores artificiales, peluches y regalos para ocasiones especiales</p>
+      </div>
+    </div>
+
+    <div class="top-controls" aria-hidden="false">
+      <input id="Nombre" type="text" placeholder="Escribe tu nombre (ej: Julio)" aria-label="Nombre del usuario" />
+      <!-- Ajusta href a la ruta real del catálogo si tienes una página o endpoint -->
+      <a id="catalogoBtn" class="btn ghost" href="#" title="Abrir catálogo" role="button">Catálogo</a>
+    </div>
+
+    <section class="chat-wrap" aria-live="polite">
+      <div id="Mensajes" role="log" aria-label="Mensajes del chat">
+        <div class="meta">Consejo: usa la lista de sugerencias o escribe tu mensaje. Presiona Enter para enviar.</div>
+      </div>
+
+      <div class="sugerencias-panel">
+        <button class="collapsible" id="toggleSugs" aria-expanded="false">
+          Sugerencias rápidas <small>(toca para abrir/cerrar)</small>
+          <span aria-hidden="true">▾</span>
+        </button>
+
+        <div class="panel-content" id="panelContent">
+          <div class="category" aria-hidden="true">
+            <div style="min-width:100%;">
+              <strong style="display:block; margin-bottom:6px;">Flores Eternas</strong>
+              <button class="quick-btn primary small" data-msg="¿Qué son las flores eternas?">¿Qué son?</button>
+              <button class="quick-btn small" data-msg="¿De qué material están hechas?">Material</button>
+              <button class="quick-btn small" data-msg="¿Cuánto duran las flores eternas?">Duración</button>
+            </div>
+
+            <div style="min-width:100%;">
+              <strong style="display:block; margin-bottom:6px;">Peluches</strong>
+              <button class="quick-btn small" data-msg="¿Qué tamaños de peluches tienen?">Tamaños</button>
+              <button class="quick-btn small" data-msg="¿Puedo personalizar un peluche?">Personalizar</button>
+            </div>
+
+            <div style="min-width:100%;">
+              <strong style="display:block; margin-bottom:6px;">Regalos para pareja</strong>
+              <button class="quick-btn small" data-msg="¿Qué me recomiendan para aniversario?">Recomendaciones</button>
+              <button class="quick-btn small" data-msg="¿Puedo agregar una dedicatoria?">Agregar dedicatoria</button>
+            </div>
+
+            <div style="min-width:100%;">
+              <strong style="display:block; margin-bottom:6px;">Centros de mesa</strong>
+              <button class="quick-btn small" data-msg="¿Tienen centros de mesa para graduación?">Centros graduación</button>
+              <button class="quick-btn small" data-msg="¿Se pueden personalizar los centros de mesa?">¿Personalizan?</button>
+            </div>
+
+            <div style="min-width:100%;">
+              <strong style="display:block; margin-bottom:6px;">Envíos & Pagos</strong>
+              <button class="quick-btn small" data-msg="¿Hacen entregas a domicilio?">Entregas</button>
+              <button class="quick-btn small" data-msg="¿Puedo pedir para hoy?">Pedido para hoy</button>
+              <button class="quick-btn small" data-msg="¿Qué métodos de pago aceptan?">Métodos de pago</button>
+            </div>
+
+            <div style="min-width:100%; display:flex; gap:8px; margin-top:6px;">
+              <button class="quick-btn primary" id="openCatalogFromSugs">Ver Catálogo</button>
+              <button class="quick-btn" data-msg="¿Cómo hago un pedido?">¿Cómo pedir?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry" style="margin-top:6px;">
+        <input id="Mensaje" type="text" placeholder="Escribe un mensaje..." aria-label="Escribe tu mensaje" />
+        <button class="send" id="sendBtn">ENVIAR</button>
+      </div>
+    </section>
+
+    <div class="help">¿Necesitas más opciones? Pulsa <strong>Catálogo</strong> o usa los botones de sugerencias.</div>
+  </main>
+
+  <script src="../Scripts/javascript1.js" defer></script>
+</body>
+</html>
+

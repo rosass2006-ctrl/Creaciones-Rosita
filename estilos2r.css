@@ -1,0 +1,213 @@
+/* estilo2.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: #c48a80;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff8f2;
+    min-width: 120px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #d8aeb5;
+}
+
+/* Mostrar menú al pasar mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D7B7B8;
+    border-bottom: 3px solid white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9ece1;
+    color: #4b2e2e;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.dropbtn {
+    background-color: #C28893;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #D9A6AE;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F0E5D7;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #4D1B24;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #D9A6AE;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Secciones de misión y visión */
+.mision-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #F3E8DD;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1; /* permite que el contenido principal crezca y empuje el footer */
+}
+
+.mision-section h2 {
+    color: #6F3841;
+    margin-bottom: 15px;
+}
+
+.mision-section p {
+    color: #4D1B24;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #D7B7B8;
+    padding: 20px 0;
+    border-top: 3px solid #C28893;
+    margin-top: auto; /* hace que el footer quede al final */
+}
+
+.footer-info p {
+    color: #4D1B24;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Redes flotantes */
+.contenedor-redes-flotantes {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    z-index: 999; 
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: flex-end; 
+}
+
+.logo-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.whatsapp {
+    background-color: #FFFFFF; 
+}
+
+.instagram {
+    background-color: #E1306C; 
+}
+
+.tiktok {
+    background-color: #000000; 
+}
+
+.logo-item img {
+    width: 150%;
+    height: 150%;
+    object-fit: contain; 
+}
+
